@@ -7,5 +7,6 @@ target 'Lug_it' do
 
   # Pods for Lug_it
   pod 'Firebase/Core'
-
+  pod 'Firebase/Database'
+  
 end

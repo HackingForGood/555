@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		0B99F7ECC8E12C8251F28C87 /* Pods_Lug_it.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17EA7390114CBC2C8620EF95 /* Pods_Lug_it.framework */; };
+		D51BDCAE1EF5A997008F76FA /* ProviderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51BDCAD1EF5A997008F76FA /* ProviderViewController.swift */; };
 		D532009D1EF5A611009A8F5A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D532009C1EF5A611009A8F5A /* GoogleService-Info.plist */; };
 		D5E262E51EF59DB500F91E0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E262E41EF59DB500F91E0D /* AppDelegate.swift */; };
-		D5E262E71EF59DB500F91E0D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E262E61EF59DB500F91E0D /* ViewController.swift */; };
+		D5E262E71EF59DB500F91E0D /* RequesterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E262E61EF59DB500F91E0D /* RequesterViewController.swift */; };
 		D5E262EA1EF59DB500F91E0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5E262E81EF59DB500F91E0D /* Main.storyboard */; };
 		D5E262EC1EF59DB500F91E0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5E262EB1EF59DB500F91E0D /* Assets.xcassets */; };
 		D5E262EF1EF59DB500F91E0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5E262ED1EF59DB500F91E0D /* LaunchScreen.storyboard */; };
@@ -20,10 +21,11 @@
 		00D89330779E628927910630 /* Pods-Lug_it.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lug_it.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Lug_it/Pods-Lug_it.debug.xcconfig"; sourceTree = "<group>"; };
 		17EA7390114CBC2C8620EF95 /* Pods_Lug_it.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lug_it.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EE9F2FA35981F7E614F15C2 /* Pods-Lug_it.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lug_it.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lug_it/Pods-Lug_it.release.xcconfig"; sourceTree = "<group>"; };
+		D51BDCAD1EF5A997008F76FA /* ProviderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProviderViewController.swift; sourceTree = "<group>"; };
 		D532009C1EF5A611009A8F5A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D5E262E11EF59DB500F91E0D /* Lug_it.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lug_it.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5E262E41EF59DB500F91E0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D5E262E61EF59DB500F91E0D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D5E262E61EF59DB500F91E0D /* RequesterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequesterViewController.swift; sourceTree = "<group>"; };
 		D5E262E91EF59DB500F91E0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D5E262EB1EF59DB500F91E0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D5E262EE1EF59DB500F91E0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,7 +56,8 @@
 		D53200991EF59E68009A8F5A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				D5E262E61EF59DB500F91E0D /* ViewController.swift */,
+				D5E262E61EF59DB500F91E0D /* RequesterViewController.swift */,
+				D51BDCAD1EF5A997008F76FA /* ProviderViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -248,7 +251,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5E262E71EF59DB500F91E0D /* ViewController.swift in Sources */,
+				D51BDCAE1EF5A997008F76FA /* ProviderViewController.swift in Sources */,
+				D5E262E71EF59DB500F91E0D /* RequesterViewController.swift in Sources */,
 				D5E262E51EF59DB500F91E0D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

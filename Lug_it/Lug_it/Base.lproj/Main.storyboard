@@ -13,7 +13,7 @@
         <!--Requested User-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Lug_it" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="RequesterViewController" customModule="Lug_it" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -167,10 +167,10 @@
             </objects>
             <point key="canvasLocation" x="1048.8" y="214.54272863568218"/>
         </scene>
-        <!--View Controller-->
+        <!--Provider View Controller-->
         <scene sceneID="A0E-Dj-hdX">
             <objects>
-                <viewController id="H6r-O4-Dcn" sceneMemberID="viewController">
+                <viewController id="H6r-O4-Dcn" customClass="ProviderViewController" customModule="Lug_it" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="OdV-l1-3iO"/>
                         <viewControllerLayoutGuide type="bottom" id="Pfi-oD-WQL"/>
