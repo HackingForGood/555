@@ -35,6 +35,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D53200991EF59E68009A8F5A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D5E262E61EF59DB500F91E0D /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		D532009A1EF59E71009A8F5A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		D532009B1EF59E76009A8F5A /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Modal;
+			sourceTree = "<group>";
+		};
 		D5E262D81EF59DB500F91E0D = {
 			isa = PBXGroup;
 			children = (
@@ -54,9 +76,11 @@
 		D5E262E31EF59DB500F91E0D /* Lug_it */ = {
 			isa = PBXGroup;
 			children = (
-				D5E262F61EF59DBE00F91E0D /* Supporting Files */,
-				D5E262E61EF59DB500F91E0D /* ViewController.swift */,
 				D5E262E81EF59DB500F91E0D /* Main.storyboard */,
+				D532009B1EF59E76009A8F5A /* Modal */,
+				D532009A1EF59E71009A8F5A /* View */,
+				D53200991EF59E68009A8F5A /* Controller */,
+				D5E262F61EF59DBE00F91E0D /* Supporting Files */,
 			);
 			path = Lug_it;
 			sourceTree = "<group>";
@@ -312,6 +336,7 @@
 				D5E262F51EF59DB500F91E0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
