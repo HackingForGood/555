@@ -16,6 +16,12 @@ class ProviderViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    // MARK: Outlets
+    @IBOutlet weak var providerLocationLBL: UILabel!
+    @IBOutlet weak var providerDateLBL: UILabel!
+    @IBOutlet weak var providerVolumeLBL: UILabel!
+    @IBOutlet weak var providerSizeLBL: UILabel!
+    @IBOutlet weak var providerProductLBL: UILabel!
 
     /*
     // MARK: - Navigation

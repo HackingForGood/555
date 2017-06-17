@@ -113,7 +113,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="cuq-hb-Obh">
                                         <rect key="frame" x="0.0" y="432" width="343" height="76.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ypu-Pc-XJH">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Volume" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ypu-Pc-XJH">
                                                 <rect key="frame" x="0.0" y="0.0" width="343" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -158,10 +158,19 @@
                     <navigationItem key="navigationItem" title="Requested User" prompt="" id="OUf-PN-8V0">
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="v31-5L-oqA">
                             <connections>
+                                <action selector="doneButtonTouch:" destination="BYZ-38-t0r" id="aZG-O5-V7n"/>
                                 <segue destination="H6r-O4-Dcn" kind="show" id="9wQ-9h-yys"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="dateTF" destination="LoQ-rW-MYG" id="hz4-1O-N8n"/>
+                        <outlet property="locationTF" destination="Ph1-OO-kAC" id="Kzb-Oe-uMy"/>
+                        <outlet property="productTF" destination="vak-4x-ZTe" id="BlT-hp-FVt"/>
+                        <outlet property="sizeTF" destination="pyn-RM-NZb" id="CqA-wT-rKY"/>
+                        <outlet property="testLBL" destination="lW8-ro-Yv6" id="apl-uT-HXR"/>
+                        <outlet property="volumeTF" destination="ce1-Tv-qq4" id="ug4-bG-Tyu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -206,7 +215,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Volume" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dwa-JF-jo9">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Size" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dwa-JF-jo9">
                                         <rect key="frame" x="0.0" y="250" width="343" height="32.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -253,6 +262,13 @@
                             <constraint firstItem="Pfi-oD-WQL" firstAttribute="top" secondItem="bw0-55-78E" secondAttribute="bottom" id="NLz-Kc-XNk"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="providerDateLBL" destination="Gen-Wt-jc1" id="T92-Jg-hrN"/>
+                        <outlet property="providerLocationLBL" destination="aPu-Ck-Mjv" id="Vsw-9F-X2e"/>
+                        <outlet property="providerProductLBL" destination="Fpa-H4-wyk" id="J3d-ik-3do"/>
+                        <outlet property="providerSizeLBL" destination="ZK7-4z-Evz" id="isI-RY-SwT"/>
+                        <outlet property="providerVolumeLBL" destination="asF-qC-0V5" id="4Jx-Jh-7aI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M1G-7k-9Mt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
