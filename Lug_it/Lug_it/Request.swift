@@ -8,6 +8,7 @@
 
 import Foundation
 
+// MARK: DATA GUY
 struct Request {
     
     var product: String

@@ -13,13 +13,32 @@ class RequesterViewController: UIViewController, UITextFieldDelegate {
     
     // MARK: Properties
     // First entry (Child Reference)
-    let RequesterChild = FIRDatabase.database().reference().child("Requester")
+    let productChild = FIRDatabase.database().reference().child("Product")
+    let locationChild = FIRDatabase.database().reference().child("Location")
+    let volumeChild = FIRDatabase.database().reference().child("Volume")
+    let dateChild = FIRDatabase.database().reference().child("Date")
     
+    // MARK: DATA GUY
     // Request
-    var newRequest = Request(product: "Laptop", location: "Cambridge, MA", description: "a brand new laptop", date: "July 2017", volume: 100, size: 100, width: 100, height: 100, length: 100, weight: 100, userID: nil)
+    //    var newRequest = Request(product: "Laptop", location: "Cambridge, MA", description: "a brand new laptop", date: "July 2017", volume: 100, size: 100, width: 100, height: 100, length: 100, weight: 100, userID: nil)
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        productChild.observe(.value, with: { (snap) in
+            print(snap.value as? String ?? "nothing here")
+        })
+        
+        locationChild.observe(.value, with: { (snap) in
+            print(snap.value as? String ?? "nothing here")
+        })
+        
+        volumeChild.observe(.value, with: { (snap) in
+            print(snap.value as? Double ?? "nothing here")
+        })
+        
+        dateChild.observe(.value, with: { (snap) in
+            print(snap.value as? String ?? "nothing here")
+        })
         
         // Textfiled
         locationTF.delegate = self
@@ -43,28 +62,19 @@ class RequesterViewController: UIViewController, UITextFieldDelegate {
     
     // MARK: Done Button Touched
     @IBAction func doneButtonTouch(_ sender: UIBarButtonItem) {
-        
-        RequesterChild.observe(.value, with: { (snap) in
-            self.newRequest.product = snap.value as? String ?? "Nothing here"
-            self.newRequest.location = snap.value as? String ?? "Nothing here"
-            self.newRequest.date = snap.value as? String ?? "Nothing here"
-            self.newRequest.volume = snap.value as? Double ?? 0.0
-            
-            print(snap.)
-        })
     }
     
     // MARK: DATA GUY
-    func getFields () -> Request {
-        return newRequest
-    }
+    //    func getFields () -> Request {
+    //        return newRequest
+    //    }
+    //
+    //    func setFields(r: Request) {
+    //        var newR = r
+    //        newR.product = locationTF.text ?? "Default text"
+    //    }
     
-    func setFields(r: Request) {
-        var newR = r
-        newR.product = locationTF.text ?? "Default text"
-    }
     
     
-
 }
 
