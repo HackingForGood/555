@@ -10,6 +10,7 @@
 		0B99F7ECC8E12C8251F28C87 /* Pods_Lug_it.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17EA7390114CBC2C8620EF95 /* Pods_Lug_it.framework */; };
 		D52FFA3B1FF70D7100438B54 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52FFA3A1FF70D7100438B54 /* Product.swift */; };
 		D532009D1EF5A611009A8F5A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D532009C1EF5A611009A8F5A /* GoogleService-Info.plist */; };
+		D5AB58471FFEDA6400A6037F /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5AB58461FFEDA6400A6037F /* ProductViewController.swift */; };
 		D5E262E51EF59DB500F91E0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E262E41EF59DB500F91E0D /* AppDelegate.swift */; };
 		D5E262E71EF59DB500F91E0D /* RequesterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E262E61EF59DB500F91E0D /* RequesterViewController.swift */; };
 		D5E262EA1EF59DB500F91E0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5E262E81EF59DB500F91E0D /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 		9EE9F2FA35981F7E614F15C2 /* Pods-Lug_it.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lug_it.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lug_it/Pods-Lug_it.release.xcconfig"; sourceTree = "<group>"; };
 		D52FFA3A1FF70D7100438B54 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		D532009C1EF5A611009A8F5A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D5AB58461FFEDA6400A6037F /* ProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
 		D5E262E11EF59DB500F91E0D /* Lug_it.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lug_it.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5E262E41EF59DB500F91E0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5E262E61EF59DB500F91E0D /* RequesterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequesterViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				D5E262E61EF59DB500F91E0D /* RequesterViewController.swift */,
+				D5AB58461FFEDA6400A6037F /* ProductViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 			files = (
 				D5E262E71EF59DB500F91E0D /* RequesterViewController.swift in Sources */,
 				D5E262E51EF59DB500F91E0D /* AppDelegate.swift in Sources */,
+				D5AB58471FFEDA6400A6037F /* ProductViewController.swift in Sources */,
 				D52FFA3B1FF70D7100438B54 /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

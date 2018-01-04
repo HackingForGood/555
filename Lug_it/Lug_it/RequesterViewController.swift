@@ -23,15 +23,15 @@ class RequesterViewController: UIViewController {
     @IBOutlet weak var nameTFL: UITextField!
     @IBOutlet weak var locationTFL: UITextField!
     @IBOutlet weak var sizeTFL: UITextField!
+    @IBOutlet weak var productLBL: UILabel!
     
     // MARK: Actions
     @IBAction func donePressed(_ sender: UIButton) {
         product = Product(name: nameTFL.text, location: locationTFL.text, size: Double(sizeTFL.text!))
         
-        print(product?.name)
     }
     
-    // Lifecycle
+    // MARK: Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         nameChild.observe(.value, with: { (snap) in
@@ -47,5 +47,11 @@ class RequesterViewController: UIViewController {
         })
     }
     
+    // MARK: Segue
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let productVC = segue.destination as? ProductViewController {
+            productVC.product = product
+        }
+    }
     
 }
