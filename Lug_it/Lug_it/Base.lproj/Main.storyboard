@@ -54,7 +54,7 @@
                                 <state key="normal" title="Done"/>
                                 <connections>
                                     <action selector="donePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gsf-En-sGY"/>
-                                    <segue destination="H6r-O4-Dcn" kind="show" identifier="Show Product" id="wDh-5O-CV9"/>
+                                    <segue destination="jv1-1v-4Yz" kind="show" identifier="Show Product" id="wDh-5O-CV9"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KDE-Az-A4X">
@@ -89,7 +89,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1085.5999999999999" y="-545.57721139430294"/>
+            <point key="canvasLocation" x="1186" y="-546"/>
         </scene>
         <!--Product View Controller-->
         <scene sceneID="A0E-Dj-hdX">
@@ -134,6 +134,7 @@
                             <constraint firstItem="yQX-bj-vGs" firstAttribute="top" secondItem="OdV-l1-3iO" secondAttribute="bottom" id="W5O-B7-gtL"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="xOH-t8-CI6"/>
                     <connections>
                         <outlet property="locationLBL" destination="1R3-gz-39d" id="msa-BW-Tng"/>
                         <outlet property="productLBL" destination="yWo-vh-U3J" id="qa0-Ra-Fii"/>
@@ -142,7 +143,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M1G-7k-9Mt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1950" y="-546"/>
+            <point key="canvasLocation" x="3306" y="-546"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Trh-Ku-FVg">
@@ -161,6 +162,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AIQ-xW-08S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="244" y="-543.77811094452773"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4Z1-pA-n0X">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jv1-1v-4Yz" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3RO-Un-3mw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="H6r-O4-Dcn" kind="relationship" relationship="rootViewController" id="n09-yp-BGc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wKb-B9-9je" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2258" y="-546"/>
         </scene>
     </scenes>
 </document>

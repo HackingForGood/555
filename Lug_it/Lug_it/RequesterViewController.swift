@@ -49,9 +49,19 @@ class RequesterViewController: UIViewController {
     
     // MARK: Segue
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let productVC = segue.destination as? ProductViewController {
+        if let productVC = segue.destination.contentVC as? ProductViewController {
             productVC.product = product
+            productVC.title = product?.name
         }
     }
-    
+}
+
+extension UIViewController {
+    var contentVC: UIViewController {
+        if let navCon = self as? UINavigationController {
+            return navCon.visibleViewController ?? self
+        } else {
+            return self
+        }
+    }
 }
